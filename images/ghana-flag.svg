@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-labelledby="title">
+  <title id="title">Flag of Ghana</title>
+  <rect width="300" height="60" fill="#ce1126"/>
+  <rect y="60" width="300" height="60" fill="#fcd116"/>
+  <rect y="120" width="300" height="60" fill="#006b3f"/>
+  <path d="m150 73 4.7 14.5h15.2l-12.3 9 4.7 14.5-12.3-9-12.3 9 4.7-14.5-12.3-9h15.2Z" fill="#111"/>
+</svg>

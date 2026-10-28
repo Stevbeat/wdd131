@@ -4,11 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals course landing page for Stephen Otoo-Yirenkyi, with a student introduction, Ghana information, and web development resources.">
+    <meta name="author" content="Stephen Otoo-Yirenkyi">
+    <title>WDD 131 – Dynamic Web Fundamentals – Stephen Otoo-Yirenkyi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD131 - Stevbeatz</h1>
+    <header>
+        <div class="masthead">
+            <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        </div>
+        <nav aria-label="Main navigation">
+            <a href="https://www.linkedin.com/in/yirenki-otoo-stephen-889b21194/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank"
+                rel="noopener noreferrer">Scripture</a>
+            <a href="final-project/">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Stephen Otoo-Yirenkyi</h1>
+        <div class="card-grid">
+            <section class="card about-card" aria-labelledby="about-heading">
+                <h2 id="about-heading">About Me</h2>
+                <div class="card-content">
+                    <div class="introduction">
+                        <img class="profile-illustration" src="images/stephen-profile.jpg"
+                            alt="Stephen Otoo-Yirenkyi playing bass guitar">
+                        <p>I am Stephen Otoo-Yirenkyi, an IT graduate from Ghana Communication Technology University and
+                            a Software Engineering student with BYU-Pathway Worldwide. I enjoy combining technology,
+                            creativity, and practical problem-solving.</p>
+                        <p>My experience includes administrative and records support with Ghana's Electoral Commission,
+                            as well as freelance music production and mixing. I am growing my skills in web development
+                            while working with HTML, CSS, digital media, and productivity tools.</p>
+                    </div>
+                    <div class="location">
+                        <h3>Tema, Ghana</h3>
+                        <img src="images/ghana-flag.svg" alt="Flag of Ghana" width="160" height="100">
+                        <p>Ghana is my home, where I study, work, and create. I speak English and Akan (Twi), and I
+                            enjoy using technology to support people and bring ideas to life.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card resources-card" aria-labelledby="resources-heading">
+                <h2 id="resources-heading">Web Dev Resources</h2>
+                <div class="card-content">
+                    <p class="resources-intro">Useful places to learn, practice, and connect with the web development
+                        community:</p>
+                    <ul>
+                        <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Dev.to Community</a>
+                        </li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web
+                                Docs</a></li>
+                        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a>
+                        </li>
+                        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a>
+                        </li>
+                        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Stephen Otoo-Yirenkyi <span class="footer-divider">•</span> Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

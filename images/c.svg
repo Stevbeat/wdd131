@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" role="img" aria-labelledby="title">
+  <title id="title">Illustrated profile avatar</title>
+  <rect width="240" height="280" rx="12" fill="#e7eef2"/>
+  <circle cx="120" cy="99" r="52" fill="#5b3429"/>
+  <path d="M66 91c3-43 27-66 59-66 34 0 56 24 55 65-10-12-22-20-38-22-21 16-46 22-76 23Z" fill="#202c34"/>
+  <path d="M81 105c0-23 16-39 39-39s39 16 39 39v12c0 25-18 44-39 44s-39-19-39-44Z" fill="#9b5b43"/>
+  <path d="M96 111h2m44 0h2" stroke="#202c34" stroke-linecap="round" stroke-width="5"/>
+  <path d="M108 132c8 7 17 7 25 0" fill="none" stroke="#6b3027" stroke-linecap="round" stroke-width="4"/>
+  <path d="M40 280c6-62 34-91 80-91s74 29 80 91Z" fill="#204e70"/>
+  <path d="m99 190 21 29 21-29" fill="#fff"/>
+  <path d="m106 211 14 15 14-15-14-13Z" fill="#f2c14e"/>
+</svg>

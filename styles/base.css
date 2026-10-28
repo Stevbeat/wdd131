@@ -1,0 +1,250 @@
+:root {
+    color-scheme: light;
+    --blue: #204e70;
+    --blue-dark: #173a54;
+    --ink: #263746;
+    --muted: #52616d;
+    --surface: #ffffff;
+    --page: #f3f6f8;
+    --border: #c7d0d6;
+    --gold: #f2c14e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.65;
+}
+
+.masthead {
+    padding: 1rem;
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding: 0.25rem max(1rem, calc((100% - 1100px) / 2));
+    background: #27343d;
+}
+
+nav a {
+    padding: 0.65rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: var(--gold);
+    color: #1d2b34;
+    outline: none;
+}
+
+main {
+    flex: 1;
+    width: min(1100px, calc(100% - 2rem));
+    margin: 1.25rem auto 1.5rem;
+}
+
+h1 {
+    margin: 0 0 1rem;
+    color: var(--blue-dark);
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.card {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 0.65rem;
+    background: var(--surface);
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0.55rem 1rem;
+    background: var(--blue);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.08rem;
+    text-align: center;
+}
+
+.card-content {
+    padding: 1rem 1.15rem;
+}
+
+.introduction {
+    min-height: 12rem;
+}
+
+.introduction p {
+    margin: 0 0 0.8rem;
+}
+
+.profile-illustration {
+    float: right;
+    width: 9.5rem;
+    max-width: 38%;
+    height: auto;
+    margin: 0 0 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 0.35rem;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: minmax(100px, 0.7fr) 1.5fr;
+    gap: 0.2rem 1rem;
+    align-items: center;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--border);
+}
+
+.location h3 {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: var(--blue-dark);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.location img {
+    display: block;
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    border: 1px solid var(--border);
+}
+
+.location p {
+    margin: 0;
+}
+
+.resources-card .card-content {
+    padding-top: 1.35rem;
+}
+
+.resources-intro {
+    margin: 0 0 0.75rem;
+    color: var(--muted);
+}
+
+.resources-card ul {
+    margin: 0;
+    padding-left: 1.35rem;
+}
+
+.resources-card li {
+    padding: 0.22rem 0;
+}
+
+a {
+    color: #0756a3;
+}
+
+a:hover {
+    color: #8a4300;
+}
+
+a:focus-visible {
+    border-radius: 0.15rem;
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+}
+
+footer {
+    padding: 0.85rem 1rem 1rem;
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-divider {
+    padding: 0 0.35rem;
+    color: var(--gold);
+}
+
+#lastModified {
+    color: #ffdf71;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-card .card-content {
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 430px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 0.5rem 0.65rem;
+    }
+
+    .location {
+        grid-template-columns: 1fr;
+    }
+
+    .location h3 {
+        grid-column: auto;
+    }
+
+    .location img {
+        margin: 0 auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
