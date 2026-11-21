@@ -12,6 +12,21 @@
     box-sizing: border-box;
 }
 
+.skip-link {
+    position: absolute;
+    top: -5rem;
+    left: 1rem;
+    z-index: 10;
+    padding: 0.65rem 1rem;
+    background: #fff;
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    top: 0.5rem;
+}
+
 body {
     display: flex;
     min-height: 100vh;

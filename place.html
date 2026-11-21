@@ -18,16 +18,17 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
         <h1>Ghana</h1>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="hero" aria-label="Scenes from Ghana">
             <picture class="hero-picture">
                 <source media="(max-width: 700px)" srcset="images/ghana-mobile.webp" type="image/webp">
                 <img src="images/ghana-wide.webp" alt="A scenic landscape along a hiking trail in Boti, Ghana"
-                    width="1920" height="1280">
+                    width="1920" height="1280" fetchpriority="high">
             </picture>
 
             <section class="info-card data-card" aria-labelledby="data-heading">
@@ -46,7 +47,7 @@
 
             <section class="info-card weather-card" aria-labelledby="weather-heading">
                 <h2 id="weather-heading">Weather</h2>
-                <img class="weather-icon" src="images/cloud-sun.svg" alt="" width="72" height="72">
+                <img class="weather-icon" src="images/cloud-sun.svg" alt="" width="72" height="72" aria-hidden="true">
                 <dl>
                     <div><dt>Temperature:</dt><dd><span id="temperature">10</span> °C</dd></div>
                     <div><dt>Conditions:</dt><dd>Partly cloudy</dd></div>
