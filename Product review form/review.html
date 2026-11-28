@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for sharing your product review.">
+    <meta name="author" content="Stephen Otoo-Yirenkyi">
+    <title>Review Received | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/review-form.css">
+    <script src="../scripts/products.js" defer></script>
+    <script src="../scripts/review-form.js" defer></script>
+    <script src="../scripts/review.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <p class="eyebrow">WDD 131 · Product feedback</p>
+        <h1>Thank you!</h1>
+        <p class="header-intro">Your feedback helps us make better products.</p>
+    </header>
+
+    <main id="main-content">
+        <section class="confirmation-card" aria-labelledby="confirmation-heading">
+            <div class="confirmation-icon" aria-hidden="true">✓</div>
+            <h2 id="confirmation-heading">Review received</h2>
+            <p id="confirmation-message" class="confirmation-message" aria-live="polite"></p>
+            <p id="submission-error" class="submission-error" role="alert" hidden></p>
+            <dl id="review-summary" class="review-summary" hidden></dl>
+            <p class="review-total">Reviews completed: <strong id="review-count">—</strong></p>
+            <a class="back-link" href="form.html">Write another review</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentyear"></span> Stephen Otoo-Yirenkyi <span class="footer-divider">•</span> Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
